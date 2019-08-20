@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Todo App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <title>Todo App</title> 
 </head>
 <body>
     <h1>Cam's Todo App</h1>
     <form>
-        <input type="text" name="listItem" placeholder="Add list item here...">
+        <input type="text" id="listItem" placeholder="Enter list item here...">
+        <button type="button" id="add-item" onclick="newItem()">Add Item</button>
     </form>
-   <ul>
-       <li class="item"></li>
+   <ul id="list">
+       
    </ul>
+
+   <script src="js/js.js"></script>
+   
 </body>
 </html>
