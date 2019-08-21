@@ -3,6 +3,8 @@ elList = document.getElementById('list')
 
 var addItem = document.getElementById('add-item');
 
+
+
 function newItem(e) {
     // e.preventDefault(); 
     newEl = document.createElement('li'); 
@@ -12,10 +14,11 @@ function newItem(e) {
     
 }
 
-// addItem.addEventListener('click', newItem, false);
-document.getElementById("listItem").addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
+addItem.addEventListener('click', newItem, false);
+
+$('#listItem').keydown(function(e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
        newItem();
     }
 });

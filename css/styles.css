@@ -3,6 +3,7 @@ h1 {
 }
 ul {
     list-style-type: none;
+    text-align: center;
 }
 form {
     text-align: center;
